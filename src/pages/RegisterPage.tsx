@@ -124,7 +124,7 @@ const RegisterPage: React.FC = () => {
           
           {/* Step indicators */}
           <div className="flex justify-center space-x-2 pt-2 select-none">
-            <div className={`h-1.5 w-10 rounded-full transition-colors ${step === 1 ? 'bg-brand-600' : 'bg-slate-200 dark:bg-dark-800'}`} />
+            <div className={`h-1.5 w-10 rounded-full transition-colors ${step === 1 ? 'bg-brand-600' : 'bg-sl ate-200 dark:bg-dark-800'}`} />
             <div className={`h-1.5 w-10 rounded-full transition-colors ${step === 2 ? 'bg-brand-600' : 'bg-slate-200 dark:bg-dark-800'}`} />
           </div>
         </div>
@@ -143,7 +143,7 @@ const RegisterPage: React.FC = () => {
                 <Input
                   label="Full Name"
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Enter Name"
                   icon={<User className="h-4 w-4" />}
                   error={errors.name?.message}
                   {...register('name')}
@@ -152,7 +152,7 @@ const RegisterPage: React.FC = () => {
                 <Input
                   label="Email Address"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="Aeroflow@gmail.com"
                   icon={<Mail className="h-4 w-4" />}
                   error={errors.email?.message}
                   {...register('email')}
